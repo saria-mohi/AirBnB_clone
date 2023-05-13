@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""This is the console"""
+"""Defines the HBnB console."""
 import cmd
 import re
 from shlex import split
@@ -32,7 +32,7 @@ def parse(arg):
 
 
 class HBNBCommand(cmd.Cmd):
-    """Defines the command interpreter.
+    """Defines the HolbertonBnB command interpreter.
 
     Attributes:
         prompt (str): The command prompt.
@@ -131,8 +131,9 @@ class HBNBCommand(cmd.Cmd):
             storage.save()
 
     def do_all(self, arg):
-        """Prints all string representation of all instances
-        based or not on the class name."""
+        """Usage: all or all <class> or <class>.all()
+        Display string representations of all instances of a given class.
+        If no class is specified, displays all instantiated objects."""
         argl = parse(arg)
         if len(argl) > 0 and argl[0] not in HBNBCommand.__classes:
             print("** class doesn't exist **")
@@ -156,8 +157,11 @@ class HBNBCommand(cmd.Cmd):
         print(count)
 
     def do_update(self, arg):
-        """Updates an instance based on the class name and id
-        by adding or updating attribute."""
+        """Usage: update <class> <id> <attribute_name> <attribute_value> or
+       <class>.update(<id>, <attribute_name>, <attribute_value>) or
+       <class>.update(<id>, <dictionary>)
+        Update a class instance of a given id by adding or updating
+        a given attribute key/value pair or dictionary."""
         argl = parse(arg)
         objdict = storage.all()
 

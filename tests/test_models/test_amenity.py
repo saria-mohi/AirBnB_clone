@@ -86,7 +86,7 @@ class TestAmenity_instantiation(unittest.TestCase):
 
 
 class TestAmenity_save(unittest.TestCase):
-    """ Amenity class Unittests."""
+    """Unittests for testing save method of the Amenity class."""
 
     @classmethod
     def setUp(self):

@@ -1,5 +1,11 @@
 #!/usr/bin/python3
-"""city.py unittests"""
+"""Defines unittests for models/city.py.
+
+Unittest classes:
+    TestCity_instantiation
+    TestCity_save
+    TestCity_to_dict
+"""
 import os
 import models
 import unittest
