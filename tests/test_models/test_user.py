@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""User class Test"""
+"""Test cases for User class"""
 
 import unittest
 import time
@@ -12,7 +12,7 @@ User = user.User
 
 
 class TestUser(unittest.TestCase):
-    """User class Test"""
+    """tests for the Class User"""
 
     def setUp(self):
         """Set up test methods"""

@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Place class Test"""
+"""Test cases for Place class"""
 
 import unittest
 import time
@@ -14,7 +14,7 @@ Place = place.Place
 
 
 class TestPlace(unittest.TestCase):
-    """Place class Test"""
+    """tests for the Class Place"""
 
     def setUp(self):
         """Set up test methods"""

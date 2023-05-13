@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""State class Test"""
+"""Test cases for State class"""
 
 import unittest
 import time
@@ -12,7 +12,7 @@ State = state.State
 
 
 class TestState(unittest.TestCase):
-    """State class Test"""
+    """tests for the Class State"""
 
     def setUp(self):
         """Set up test methods"""

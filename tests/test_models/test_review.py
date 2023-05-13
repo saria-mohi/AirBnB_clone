@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Review class Test"""
+"""Test cases for Review class"""
 
 import unittest
 import time
@@ -12,7 +12,7 @@ Review = review.Review
 
 
 class TestReview(unittest.TestCase):
-    """Review class Test"""
+    """tests for the Class Review"""
 
     def setUp(self):
         """Set up test methods"""

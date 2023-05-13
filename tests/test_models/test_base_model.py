@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-"""BaseModels class Test"""
-
+""" module for the tests cases for the BaseModels class
+"""
 import unittest
 import pep8
 import time
@@ -9,7 +9,8 @@ from models.base_model import BaseModel
 
 
 class TestBaseModel(unittest.TestCase):
-    """The BaseModel class Unit tests"""
+    """Unit tests for the BaseModel class for the project
+    """
 
     def setUp(self):
         """ sets up the initial conditions for the test"""

@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Amenity class Test"""
+"""Test cases for Amenity class"""
 
 import unittest
 import time
@@ -12,7 +12,7 @@ Amenity = amenity.Amenity
 
 
 class TestAmenity(unittest.TestCase):
-    """Test Amenity class"""
+    """Test cases for Amenity class"""
 
     def setUp(self):
         """Set up test methods"""

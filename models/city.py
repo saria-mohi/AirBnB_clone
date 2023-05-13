@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-"""City Class Module"""
+"""Module that contains class City"""
 from models.base_model import BaseModel
 
 
 class City(BaseModel):
-    """City Class Attributs"""
+    """Class for City instances"""
     state_id = ""
     name = ""

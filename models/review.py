@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-"""Review Class Module"""
+"""Module that contains class Review"""
 from models.base_model import BaseModel
 
 
 class Review(BaseModel):
-    """Review Class Attributs"""
+    """Class for Review instances"""
     place_id = ""
     user_id = ""
     text = ""

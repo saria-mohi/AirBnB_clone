@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""FileStorage Class Module"""
+"""Module for FileStorage class"""
 from models.base_model import BaseModel
 from models.user import User
 from models.state import State
@@ -12,7 +12,7 @@ import os
 
 
 class FileStorage:
-    """Class for json format"""
+    """Class for serialization and deserialization to json format"""
     __file_path = "file.json"
     __objects = {}
 
@@ -46,7 +46,7 @@ class FileStorage:
             pass
 
     def delete(self, obj=None):
-        """delete/destroy obj"""
+        """delete obj (called in to_destroy)"""
         if obj:
             try:
                 key = "{}.{}".format(type(obj).__name__, obj.id)
@@ -54,4 +54,3 @@ class FileStorage:
                 self.save()
             except:
                 pass
-

@@ -6,15 +6,9 @@ import uuid
 
 
 class BaseModel:
-    """Super class content attributes and methods for other classes"""
+    """Base class that defines all attributes/methods for other classes"""
     def __init__(self, *args, **kwargs):
-        """Initial value of instance attributes
-
-        Args:
-            - *args: list of arguments
-            - **kwargs: dict of key-values arguments
-        """
-
+        """Constructor method"""
         if kwargs:
             for key, value in kwargs.items():
                 if key == 'created_at' or key == 'updated_at':
@@ -29,7 +23,7 @@ class BaseModel:
             models.storage.new(self)
 
     def __str__(self):
-        """return string representation"""
+        """string representation"""
         return "[{}] ({}) {}".format(type(self).__name__, self.id,
                                      self.__dict__)
 

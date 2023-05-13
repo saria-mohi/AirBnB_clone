@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-"""State Class Module"""
+"""Module that contains class State"""
 from models.base_model import BaseModel
 
 
 class State(BaseModel):
-    """State class Attribute"""
+    """Class for State instances"""
     name = ""

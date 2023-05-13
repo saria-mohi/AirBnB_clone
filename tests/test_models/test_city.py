@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""City class Test"""
+"""Test cases for City class"""
 
 import unittest
 import time
@@ -12,7 +12,7 @@ City = city.City
 
 
 class TestCity(unittest.TestCase):
-    """City class Test"""
+    """tests for the Class City"""
 
     def setUp(self):
         """Set up test methods"""

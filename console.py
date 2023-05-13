@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""This is the console"""
+"""This is the console for AirBnB"""
 
 import cmd
 import re
