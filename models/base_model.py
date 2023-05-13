@@ -1,15 +1,15 @@
 #!/usr/bin/python3
-"""BaseModel Class."""
+"""Defines the BaseModel class."""
 import models
 from uuid import uuid4
 from datetime import datetime
 
 
 class BaseModel:
-    """Super class content attributes and methods for other classes"""
+    """Represents the BaseModel of the HBnB project."""
 
     def __init__(self, *args, **kwargs):
-        """Initial value of instance attributes
+        """Initialize a new BaseModel.
 
         Args:
             *args (any): Unused.
@@ -29,14 +29,16 @@ class BaseModel:
             models.storage.new(self)
 
     def save(self):
-        """updates the public instance attribute updated_at with the current
-        datetime"""
+        """Update updated_at with the current datetime."""
         self.updated_at = datetime.today()
         models.storage.save()
 
     def to_dict(self):
-        """returns a dictionary containing all keys/values of __dict__ of the
-        instance"""
+        """Return the dictionary of the BaseModel instance.
+
+        Includes the key/value pair __class__ representing
+        the class name of the object.
+        """
         rdict = self.__dict__.copy()
         rdict["created_at"] = self.created_at.isoformat()
         rdict["updated_at"] = self.updated_at.isoformat()
