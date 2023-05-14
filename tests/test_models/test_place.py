@@ -3,7 +3,6 @@
 
 import unittest
 import time
-# import pep8
 import os
 from datetime import datetime
 from models.base_model import BaseModel
@@ -23,18 +22,6 @@ class TestPlace(unittest.TestCase):
     def tearDown(self):
         """Tear Down test methods"""
         pass
-
-    # def test_Place_pep8(self):
-    #     """pep8 test"""
-    #     pep8style = pep8.StyleGuide(quiet=True)
-    #     result = pep8style.check_files(['./models/place.py'])
-    #     self.assertEqual(result.total_errors, 0)
-
-    # def test_Place_pep8(self):
-    #     """pep8 test"""
-    #     pep8style = pep8.StyleGuide(quiet=True)
-    #     result = pep8style.check_files(['tests/test_models/test_place.py'])
-    #     self.assertEqual(result.total_errors, 0)
 
     def test_place_module_docstring(self):
         """Test for the place.py module docstring"""

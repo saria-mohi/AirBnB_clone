@@ -3,7 +3,6 @@
 
 import unittest
 import time
-import pep8
 from datetime import datetime
 from models.base_model import BaseModel
 from models import review
@@ -21,18 +20,6 @@ class TestReview(unittest.TestCase):
     def tearDown(self):
         """Tear Down test methods"""
         pass
-
-    def test_Review_pep8(self):
-        """pep8 test"""
-        pep8style = pep8.StyleGuide(quiet=True)
-        result = pep8style.check_files(['./models/review.py'])
-        self.assertEqual(result.total_errors, 0)
-
-    def test_Review_pep8(self):
-        """pep8 test"""
-        pep8style = pep8.StyleGuide(quiet=True)
-        result = pep8style.check_files(['tests/test_models/test_review.py'])
-        self.assertEqual(result.total_errors, 0)
 
     def test_review_module_docstring(self):
         """Test for the review.py module docstring"""

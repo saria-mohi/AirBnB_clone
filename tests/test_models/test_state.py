@@ -3,7 +3,6 @@
 
 import unittest
 import time
-# import pep8
 from datetime import datetime
 from models.base_model import BaseModel
 from models import state
@@ -21,18 +20,6 @@ class TestState(unittest.TestCase):
     def tearDown(self):
         """Tear Down test methods"""
         pass
-
-    # def test_State_pep8(self):
-    #     """pep8 test"""
-    #     pep8style = pep8.StyleGuide(quiet=True)
-    #     result = pep8style.check_files(['./models/state.py'])
-    #     self.assertEqual(result.total_errors, 0)
-
-    # def test_State_pep8(self):
-    #     """pep8 test"""
-    #     pep8style = pep8.StyleGuide(quiet=True)
-    #     result = pep8style.check_files(['tests/test_models/test_state.py'])
-    #     self.assertEqual(result.total_errors, 0)
 
     def test_state_module_docstring(self):
         """Test for the state.py module docstring"""
