@@ -33,7 +33,6 @@ section.filters button {
 section.filters button:hover {
     opacity: .9;
 }
-/* location and amenities part of search bar */
 .locations,
 .amenities {
     height: 100%;
@@ -67,7 +66,6 @@ section.filters button:hover {
      -moz-box-sizing: border-box;
           box-sizing: border-box;
 }
-/* display location and amenities options upon hover */
 .popover {
     display: none;
     background-color: #FAFAFA;
@@ -76,7 +74,6 @@ section.filters button:hover {
     position: absolute;
     display: none;
     width: 100%;
-    /* z-index: 1; */
 }
 .popover h2 {
     font-size: 16px;
@@ -93,8 +90,6 @@ li {
 .amenities:hover .popover {
     display: block;
 }
-
-/* Swap to vertical layout for small screens */
 @media only screen and (max-width: 720px) {
     .filters {
       display: flex;

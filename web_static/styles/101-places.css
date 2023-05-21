@@ -1,5 +1,4 @@
 
-/* flexbox - places */
 .places {
   display: flex;
   flex-flow: row wrap;
@@ -20,8 +19,6 @@
   margin: 20px;
   display: flex;
   flex-direction: column;
-    /* align-content: flex-start;
-    align-items: flex-start; */
 }
 .places article .places_top{
   display: flex;
@@ -67,7 +64,6 @@
     height: 100%;
     display: flex;
     flex-direction: row;
-    /* background-position: 50% 5px; */
     background-repeat: no-repeat;
   }
   .max_guest {
@@ -86,7 +82,6 @@
     margin-bottom: 10px;
     margin-top: 10px;
   }
-/* Amenity and Reviews */
 .places article .amenities,
 .places article .reviews{
   position: relative;
@@ -113,7 +108,6 @@
 
  .places article .amenities ul li,
 .places article .amenities ul li{
-  /* height: 40px; */
 	line-height: 30px;
 	padding-left: 50px;
 }
